@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css'>
+
+
+<script>
+
+function add(name1,price1,image1)
+{
+
+localStorage.setItem("name1", name1);
+localStorage.setItem("price1",price1);
+localStorage.setItem("image1",image1);
+alert(localStorage.getItem("name1")+" Added in the Cart ");
+
+}
+
+</script>
+
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/logo.jpg" width="125px">
+            </div>
+            <nav>
+                <ul id="navbar">
+                    <li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                         <li>
+                             <input type="text" placeholder="Search Product" id="input">
+                             <ion-icon class="s" name="search"></ion-icon>
+                        </a></li>
+                    </li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="image/shopping-cart.png" width="30px" height="30px"></a>           
+                
+              
+        </div>
+    </div>
+</div>  
+
+</div>
+<!--------banner--------->
+<section id="page-header" class="categories">
+    <h1>#Stayhome</h1>
+    <p>Save more with coupons & up to 70% off!</p>
+</section>
+<!---------products---------->
+<h2 class="title">All Products</h2>
+    <div class="row">
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product9.jpg" height="500px">
+            <h4 class="shop-item-title">Pink Top</h4>
+            <p class="shop-item-price">$1,299.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Pink Top','$1,299.00','image/product9.jpg')">Add to cart</button>
+        </div>
+        <div class="col-4" onclick="window.location.href='singleProduct.html';" class="shop-item">
+            <img class="shop-item-image" src="image/SingleProduct4.jpg" height="500px">
+            <h4 class="shop-item-title">Women's Yellow T-shirt</h4>
+            <p class="shop-item-price">$855.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button"  onclick="add('Womens Yellow T-shirt','$855.00','image/SingleProduct4.jpg')" >Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product11.jpg" height="500px">
+            <h4 class="shop-item-title">Red Sling Bag</h4>
+            <p class="shop-item-price">$199.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Red Sling Bag','$199.00','image/product11.jpg')"  >Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product12.jpg" height="500px">
+            <h4 class="shop-item-title">A-line Dress</h4>
+            <p class="shop-item-price">$950.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('A-line Dress','$950.00','image/product12.jpg')">Add to cart</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product5.jpg" height="500px">
+            <h4 class="shop-item-title">white Printed Kurti</h4>
+            <p class="shop-item-price">$500.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('white Printed Kurti','$500.00','image/product5.jpg')">Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product14.jpg" height="500px">
+            <h4 class="shop-item-title">Smart Watch</h4>
+            <p class="shop-item-price">$2,999.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Smart Watch','$2,999.00','image/product14.jpg')">Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product19.jpg" height="500px">
+            <h4 class="shop-item-title">Men's Sweatshirt</h4>
+            <p class="shop-item-price">$890.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Mens Sweatshirt','$890.00','image/product19.jpg')">Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product20.jpg" height="500px">
+            <h4 class="shop-item-title">Women's Sunglasses</h4>
+            <p class="shop-item-price">$1,990.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Womens Sunglasses','$1,999.00','image/product20.jpg')">Add to cart</button>
+        </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product22.jpg" height="500px">
+            <h4 class="shop-item-title">Blue Floral Dress</h4>
+            <p class="shop-item-price">$3,999.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Blue Floral Dress','$3,999.00','image/product22.jpg')">Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product23.jpg" height="500px">
+            <h4 class="shop-item-title">White Sneakers</h4>
+            <p class="shop-item-price">$899.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('White Sneakers','$8999.00','image/product23.jpg')">Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product21.jpg" height="500px">
+            <h4 class="shop-item-title">Sunglasses</h4>
+            <p class="shop-item-price">$799.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Sunglasses','$7999.00','image/product21.jpg')">Add to cart</button>
+        </div>
+        <div class="col-4" class="shop-item">
+            <img class="shop-item-image" src="image/product24.jpg" height="500px">
+            <h4 class="shop-item-title">Kurti Set</h4>
+            <p class="shop-item-price">$999.00</p>
+            <button class="btn1 btn-primary shop-item-button" type="button" onclick="add('Kurti Set','$999.00','image/product24.jpg')">Add to cart</button>
+        </div>
+    </div>
+<!----------Pagination--------->
+<section id="pageination" >
+    <a href="#">1</a>
+    <a href="#" onclick="window.location.href='pagination.html';">2</a>
+    <a href="#">3</a>
+    <a href="#" onclick="window.location.href='pagination.html';">&#8594;</a>
+</section>
+<!--------Newsletter------->
+<section id="Newsletter" class="banner">
+    <div class="newstext" >
+        <h4>Signup for Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span> special offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button>Sign Up</button> 
+        
+    </div>
+</section>
+<!----------Brands---------->  
+<div class="brands">
+    <div class="small-container">
+        <h2 class="title">Top Brands</h2>
+        <div class="row">
+            <div class="col-5">
+                <img src="image/logo1.jpg">
+            </div>
+            <div class="col-5">
+                <img src="image/logo2.jpg">
+            </div>
+            <div class="col-5">
+                <img src="image/logo3.jpg">
+            </div>
+            <div class="col-5">
+                <img src="image/logo4.jpg">
+            </div>
+            <div class="col-5">
+                <img src="image/logo5.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<!----------Footer---------->  
+<footer class="hit">
+<div class="col">
+    <h2>Contact</h2>
+    <P><strong>Address: </strong>231,Bhomi Road,Street 32,Hydrabad</P>
+    <P><strong>Phone: </strong>+91 2345 6789</P>
+    <P><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</P>
+    <div class="follow">
+        <h2>Follow Us</h2>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube-play"></i>
+        </div>
+    </div>
+</div>
+<div class="col">
+     <h2>About</h2>
+     <a href="#">About Us</a>
+     <a href="#">Delivery Information</a>
+     <a href="#">Privacy Policy</a>
+     <a href="#">Terms & Conditions</a>
+     <a href="#">Contact Us</a>
+</div>
+<div class="col">
+    <h2>My Account</h2>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+</div>
+<div class="col install">
+    <h2>Install App</h2>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+        <img src="image/app store.png" height="50sp">
+        <img src="image/google app store.png" height="50sp">
+    </div>
+</div>
+<div class="copyright">
+    <p>0 2024, Desire etc - HTML CSS Ecommerce Website</p>
+</div>
+</footer>
+   <script src="script.js"></script>
+</body>
+</html>
